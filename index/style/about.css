@@ -1,0 +1,398 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+body{
+    font-family: Arial, sans-serif, 'Times New Roman', serif; 
+}
+.container{
+    width: 100%;
+}
+.hiddenall{
+    display: none;
+ }
+/** header **/
+.head-box{
+    position: relative;
+    background: rgb(131,58,180);
+    background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(211,170,255,1) 75%, rgba(134,143,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(211,170,255,1) 75%, rgba(134,143,255,1) 100%);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(211,170,255,1) 75%, rgba(134,143,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#868fff",GradientType=1);
+    height: 60px;
+    width: 100%; 
+    position: fixed;
+    z-index: 50; 
+    -webkit-box-shadow: -1px 8px 17px 1px rgba(34, 60, 80, 0.31);
+    -moz-box-shadow: -1px 8px 17px 1px rgba(34, 60, 80, 0.31);
+    box-shadow: -1px 8px 17px 1px rgba(34, 60, 80, 0.31);
+    top: 0;
+}
+.log2{
+    position: absolute;
+    left: 76px;
+    top: 8px;
+    font-size: 30px;
+    font-weight:900;
+    color: white;
+    text-shadow: 5px 5px 4px #1c1c1b39 ;
+    transition: 500ms font-size;
+    
+}
+.log1{
+    position: absolute;
+    left:48px;
+    top: 3px;
+    font-weight:900;
+    color: orange;
+    font-size: 25px;
+    text-shadow: 3px 3px 3px #1c1c1b39 ;
+    transition: 500ms font-size;
+    z-index: 2;
+}
+.log1:hover{
+    font-size: 28px;
+    text-shadow: 7px 7px 3px #1c1c1b39 ;  
+}
+.log2:hover{
+    font-size: 33px;
+    text-shadow: 7px 6px 3px #1c1c1b39 ;
+}
+/* /header */
+ /* navbor */
+
+.tel-box2{
+    display: none;
+
+}
+.foo-box2{
+    display: none; 
+}
+
+#darck img{
+    position: fixed;
+    z-index: 60;
+    right: 80px;
+    top: 9px;
+    width: 40px;
+}
+#sun_but img{
+    position: fixed;
+    z-index: 60;
+    right: 80px;
+    top: 11px;
+    width: 33px;
+}
+
+/* navbor */
+
+.tel-box2{
+    display: none;
+
+}
+.foo-box2{
+    display: none; 
+}
+
+#darck img{
+    position: fixed;
+    z-index: 60;
+    right: 80px;
+    top: 9px;
+    width: 40px;
+    cursor: pointer;
+}
+#sun_but img{
+    position: fixed;
+    z-index: 60;
+    right: 80px;
+    top: 11px;
+    width: 33px;
+    cursor: pointer;
+}
+
+.about a:hover{
+    color: orange;
+}
+@media only screen and (max-width:300px){
+
+    .log2{
+        position: absolute;
+        left: 48px;
+        top: 8px;
+        font-size: 25px;
+        font-weight:900;
+        color: white;
+        text-shadow: 5px 5px 4px #1c1c1b39 ;
+        transition: 500ms font-size;
+        
+    }
+    .log1{
+        position: absolute;
+        left:25px;
+        top: 3px;
+        font-weight:900;
+        color: orange;
+        font-size: 20px;
+        text-shadow: 3px 3px 3px #1c1c1b39 ;
+        transition: 500ms font-size;
+        z-index: 2;
+    }
+
+    #check_clos .but-check1{
+        right: 10px;
+        width: 30px;
+    }
+
+
+    #menu .but-check{
+        right: 10px;
+        width: 30px;
+    }
+    #darck2 #moons2{
+        right: 50px;
+        width: 33px;
+
+    }
+    #sun_but2 #sun2{
+        right: 50px;
+        width: 30px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width:650px){
+ 
+    .container{
+        width: 100%;
+    }
+    
+    .navbor{
+        position: fixed;
+        background: rgb(131,58,180);
+        background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(211,170,255,1) 75%, rgba(134,143,255,1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(190, 146, 237) 75%, rgb(198, 149, 250) 100%);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(195, 139, 255) 75%, rgb(194, 150, 255) 100%);
+        top: 55px;
+        z-index: 45;
+        width: 100%;
+        height: 100%;
+        transition: 600ms top;
+        
+     }
+     .navbor li{
+        text-align: center;
+        margin-top: 20px;
+     }
+     .navbor :first-child{
+        margin-top: 30%;
+    
+     }
+     .navbor a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+     }
+     .navbor a:hover{
+        color: rgb(253, 175, 85);
+     }
+    .about .active{
+        color:  rgb(253, 175, 85);
+     }
+    .check1{
+        display: none;
+    }
+    .but-check{
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        width: 35px;
+        z-index: 60;
+        border-radius: 8px;
+        transition: 600ms  background-color;
+        cursor: pointer;
+    }
+    .but-check1{
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        width: 35px;
+        z-index: 60;
+        border-radius: 8px;
+        transition: 600ms  background-color;
+    }
+    .but-check1:hover{
+        cursor: pointer;
+        background-color: red;
+        -webkit-box-shadow: -1px 2px 2px 1px rgba(34, 60, 80, 0.29);
+        -moz-box-shadow: -1px 1px 2px 1px rgba(34, 60, 80, 0.29);
+        box-shadow: -1px 1px 3px 1px rgba(34, 60, 80, 0.29);
+    }
+    
+    .hidden2{
+        display: none;
+    }
+    .nav-h1{
+        text-align: center;
+        padding: 20px;
+        color: white;
+        text-shadow: 4px 4px 2px #1c1c1b39 ;
+        position: relative;
+        z-index: 50;
+    }
+   
+    
+    
+    .ico-tel2{
+        width: 20px;
+        
+    }
+    .tel-box2 h2{
+        color: white;
+        font-size: 20px;
+        
+    }
+    .foo-box2{
+        display: block;
+        text-align: center;
+        
+    }
+    
+    
+    .foo-box-cild-11{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        margin: 0px auto;
+        display: block;
+        
+    }
+    
+    .foo-box-cild-21{
+        width: 50px;
+        height: 50px;
+        margin: 20px auto;
+        display: block;
+        border-radius: 10px;
+    }
+    .foo-box-cild-31{
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    
+    .ico-telegram2{
+        width: 50px;
+        vertical-align: middle;
+        padding: 3px;
+        transition: 600ms background-color;
+    }
+    .ico-facebook2{
+        width: 50px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 10px;
+        padding: 3px;
+        transition: 600ms background-color;
+    }
+    .ico-instagram2{
+        width: 50px;
+        vertical-align: middle;
+        border-radius: 10px;
+        transition: 600ms background-color;
+    }
+    #darck2 img{
+        position: fixed;
+        z-index: 60;
+        right: 80px;
+        top: 9px;
+        width: 40px;
+        cursor: pointer;
+    }
+    #sun_but2 img{
+        position: fixed;
+        z-index: 60;
+        right: 80px;
+        top: 11px;
+        width: 33px;
+        cursor: pointer;
+    }
+
+    
+    }
+     @media only screen and (min-width:650px) {
+        /* navbor */
+     
+      .hiddenall{
+         display: none;
+      }
+     
+      #darck2 img{
+         position: fixed;
+         z-index: 60;
+         right: 280px;
+         top: 9px;
+         width: 40px;
+         cursor: pointer;
+     }
+     #sun_but2 img{
+         position: fixed;
+         z-index: 60;
+         right: 280px;
+         top: 11px;
+         width: 33px;
+         cursor: pointer;
+     }
+       
+        .container{
+         width: 100%;
+     }
+     
+     .but-check{
+         display: none;
+        }
+        .check1{
+         display: none; 
+      }
+      .navbor li{
+         display: inline-block;
+         margin-right: 2px;
+         
+     }
+     .navbor{
+         position: fixed;
+         right: 20px;
+         top: 22px;
+         z-index: 60;
+     }
+     .navbor li a{
+         text-decoration:none;
+         color: rgb(255, 255, 255);
+         font-weight: bold;
+         font-size: 15px;
+         transition: 500ms font-size;
+         padding: 8px ;
+         border-radius: 5px;
+         transition: 600ms color;
+     }
+     .about a:hover{
+         color: orange;
+     }
+    
+     .about .active{
+         color: orange;
+     }
+    }
+     
+    
+    /* /navbor */
